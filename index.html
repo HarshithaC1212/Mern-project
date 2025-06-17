@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Feedback Dashboard</h1>
+
+    <section class="stats">
+      <div class="card">
+        <p>Total Feedback</p>
+        <h2 id="totalCount">0</h2>
+      </div>
+      <div class="card">
+        <p>Average Rating⭐</p>
+        <h2 id="avgRating">0.0</h2>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Submit Feedback✅</h2>
+      <form id="feedbackForm">
+        <input type="text" id="user" placeholder="Your name" required />
+        <textarea id="message" placeholder="Your feedback" required></textarea>
+        <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5" required />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="feedback-list">
+      <h2>Thank you Reaching!!😊</h2>
+      <ul id="feedbackContainer"></ul>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
